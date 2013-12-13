@@ -1,0 +1,15 @@
+.iefix{
+	margin-top: -30px !important;
+
+}
+.coverIe{
+	
+	margin-left: 61px;
+	width: 26%;
+}
+
+.ieLiDropdown{
+	background-color: white;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid #6dc5e2;
+}

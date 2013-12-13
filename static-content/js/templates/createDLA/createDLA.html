@@ -1,0 +1,155 @@
+
+   
+ 			  
+			<div  class="resiz" id="addDLA-container" >
+				<div class="addDLA-header">
+					<span id="draft" class="draft">Draft</span>
+					<span class=" more_info pull-right">
+						<p id="more_info" title="View the DLA action history">MORE INFO>></p>
+					</span>
+				</div>
+				<hr class="hr_Header"/>
+				<form style="margin-bottom: 0;">
+					<div class="DLA-head row-fluid">
+						<img style="margin-left:-12px;" src="imgs/Buttons/required.png"  width=7px height=7px/>
+						<input id="txt_dlaName" class="span12 dla-title" onKeyDown="CountLeft(Count_text, Count_left,70);" onKeyUp="CountLeft(Count_text,Count_left,70);" type="text" name="Count_text" placeHolder="Untitled DLA" maxlength="70"/>
+						<span id="left1" class="pull-right">
+							<input class="remove" readonly="readonly" disabled="disabled" type="text" id="Count_left" size="3" value="70" />
+						</span>
+					</div>	  
+				</form>
+				<!-- <form  " > -->
+				 <div id="disableForm"></div>
+				<div class="accordian-form">
+				    <div id="accordion">
+
+						    <h4>General</h4>
+						    <div id="divGeneral" >
+							</div>
+						    
+						    <h4>Classification</h4>
+						    <div id="divClassification" >	
+						    </div>
+
+						  	<h4>Website Features</h4>
+						    <div id="divWebsiteFeatures" >	
+							</div>
+
+						    <h4>Teacher's Evaluation</h4>
+						    <div id="divTeachersEvaluation" >
+						    </div>
+
+						    <h4>Keywords</h4>
+						    <div id="divKeywords" >
+							</div>
+
+						    <h4>Comments</h4>
+						    <div id="divComments">					
+							</div>
+					</div>
+					<!--Accordion Ends -->
+					<br/>
+					<!-- <div class="row-fluid"> -->
+					<!-- Added Indications-->	
+					<div >
+						<img src="imgs/Buttons/required.png"  width=7px height=7px style="display:inline;" /><label id="requireLabel"> These fields are required for Creating and Editing a DLA</label>
+					</div>
+					<div class="publishMandatory" style="display: none;" >
+						<img src="imgs/Buttons/pub_required.png" width=18px height=7px  style="display:inline;"/>
+						<label id="requireLabel">These fields are required for Publishing a DLA</label>
+					</div>
+					<!-- </div>	     -->
+				    <div class="row-fluid" id="buttonPanel" >
+				    	<div style="float:right;margin-bottom:10%;margin-top: 28px;">
+				    		<button class="btnDelete" id="btn_delete" type="button"></button>		 
+							<button class="btnCancel" id="btn_cancel" type="button"></button>
+							<button class="btnSave" id="btn_save" type="button"></button>
+							<button class="btnbackDraft" id="btn_backToDraft" type="button"></button>
+							<button class="btnRdyReview" id="btn_readyForReview" type="button"></button>
+							<button class="btnPublish" id="btn_publish" type="button"></button>
+							<button class="btnRdyPublish" id="btn_readyToPuclish"></button>
+							<button class="btnUnPublishDisqualified" id="btn_unpublishedDisqualified"></button>
+							
+						</div>
+					</div>
+				</div>
+				<!-- </form> -->
+				<!--Accordion form Ends -->
+				
+		</div>
+		
+
+		<script type="text/javascript">
+			
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = 0;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						if($(this).hasClass('active'))
+						  $(this).removeClass('active');
+						else{
+						  $('.wrapper-dropdown-3').removeClass('active');
+						  $(this).addClass('active');
+						}
+						
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text(obj.val);
+						obj.placeholder.val(opt.attr('id'));
+						console.log(opt.attr('id'));
+						// alert();
+					});
+				},
+				getValue : function() {
+				
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				
+				
+								
+				$(document).click(function() {
+					// all dropdowns
+					
+					$('.wrapper-dropdown-3').removeClass('active');
+				});
+
+				// $('li').click(function(){
+
+				//    $("#btn_save").removeAttr('disabled');
+    //     		   $("#btn_save").removeClass('disabledSave'); 
+
+				// });
+
+
+			});
+
+			function CountLeft(field, count, max) 
+		{
+			if (field.value.length > max)
+				field.value = field.value.substring(0, max);
+			else
+				count.value = max - field.value.length;
+		}    
+		</script>
+	

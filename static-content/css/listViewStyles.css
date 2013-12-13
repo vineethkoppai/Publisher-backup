@@ -1,0 +1,45 @@
+.listViewContainer{
+  margin-top:100px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+#chbx1{
+  -webkit-appearance: none !important;
+  -moz-appearance:none !important;
+}
+.regular-checkbox {
+    display: none;
+}
+.regular-checkbox + label {
+    background: url('../imgs/Buttons/checkbox.png') no-repeat ;
+    margin: 3px !important;
+    padding: 6px !important;
+    display: inline-block;
+    position: relative;
+}
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+    background: url('../imgs/Buttons/checkbox_checked.png') no-repeat !important;
+}
+.regular-checkbox:checked + label {
+    background: url('../imgs/Buttons/checkbox_checked.png') no-repeat !important;
+    background-size: 10px !important;
+}
+.regular-checkbox:checked + label:after {
+    background: url('../imgs/Buttons/checkbox_checked.png') no-repeat !important;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #99a1a7;
+}
+/*.disQualify_Rows{
+    display: none;
+}*/
+.goldStar{ 
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
+  width: 14px;
+}

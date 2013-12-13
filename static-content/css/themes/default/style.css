@@ -1,0 +1,171 @@
+
+/* jsTree default theme 1.0
+ * Supported features: dots/no-dots, icons/no-icons, focused, loading
+ * Supported plugins: ui (hovered, clicked), checkbox, contextmenu, search
+ */
+ #treeViewDiv{
+   background-color: #CDCDCD;
+   border-bottom-right-radius: 7px !important;
+   border-top-right-radius: 7px !important;
+   // height: 473px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   padding: 37px 17px 0 0;
+   position: absolute;
+   right: 1px;
+   top: 0;
+   width: 61%;
+}
+
+.jstree a {
+   display: inline !important;
+   height: auto !important;
+   width: 88%;
+   white-space: normal !important;
+   padding-left: 22px;
+   padding-right: 5px;
+}
+
+.jstree-checkbox{
+   margin-left: -23px;
+}
+
+#treeContainer{
+   width: 60%;
+   height: 95%;
+   background-color: #CDCDCD;
+   position: absolute;
+   left: 37%;
+   top: 0;
+   padding: 17px;
+}
+
+.jstree ul li{-moz-border-radius: 5px;
+   -webkit-border-radius:5px;
+   border-radius:5px;
+}
+ul.jstree-default li{
+   padding: 5px;
+}
+
+.jstree-default li { 
+   background-position:-90px 0;
+   background-repeat:repeat-y; 
+   -moz-border-radius: 5px;
+   -webkit-border-radius:5px;
+   border-radius:5px;
+   padding-top: 5px;
+}
+
+.jstree-default .jstree-open > ins {background:url("open.png") 2px 6px no-repeat;vertical-align: top !important; }
+.jstree-default .jstree-closed > ins {  background:url("closed.png") 2px 6px no-repeat; vertical-align: top !important; }
+.jstree-default .jstree-leaf > ins { background-position:-36px 0; }
+
+.jstree-default .jstree-hovered {  border:1px solid #d8f0fa;  }
+.jstree-default a .jstree-icon { background:none; width:5px;}
+.jstree-default a.jstree-loading .jstree-icon { background:url("throbber.gif") center center no-repeat !important; }
+.jstree-default a{
+   border-radius: 5px 5px 5px 5px;
+   color: #333333;
+   font-size: 12px;
+   font-weight: bold;
+   margin: 0 0 0 5px;
+   padding-top: 4px;
+}
+
+.jstree-default .jstree-no-dots .jstree-leaf > ins { background:transparent; }
+.jstree-default .jstree-no-dots .jstree-open > ins { background-position:-18px 0;   }
+.jstree-default .jstree-no-dots .jstree-closed > ins { background-position:0 0; }
+.jstree-default .jstree-no-icons a .jstree-icon { display:none; }
+
+ul li
+.jstree-default .jstree-search { font-style:italic; }
+
+li.jstree-checked {
+   background: #ffffcb; /* Old browsers */
+   background: -moz-linear-gradient(top, #ffffcb 0%, #fdfdc9 13%, #f6f6c0 34%, #f7f7c1 36%, #f6f5bd 39%, #efeeb5 62%, #ededb1 64%, #ebebaf 75%, #e8e8aa 81%, #e5e5a7 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffcb), color-stop(13%,#fdfdc9), color-stop(34%,#f6f6c0), color-stop(36%,#f7f7c1), color-stop(39%,#f6f5bd), color-stop(62%,#efeeb5), color-stop(64%,#ededb1), color-stop(75%,#ebebaf), color-stop(81%,#e8e8aa), color-stop(100%,#e5e5a7)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top, #ffffcb 0%,#fdfdc9 13%,#f6f6c0 34%,#f7f7c1 36%,#f6f5bd 39%,#efeeb5 62%,#ededb1 64%,#ebebaf 75%,#e8e8aa 81%,#e5e5a7 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(top, #ffffcb 0%,#fdfdc9 13%,#f6f6c0 34%,#f7f7c1 36%,#f6f5bd 39%,#efeeb5 62%,#ededb1 64%,#ebebaf 75%,#e8e8aa 81%,#e5e5a7 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(top, #ffffcb 0%,#fdfdc9 13%,#f6f6c0 34%,#f7f7c1 36%,#f6f5bd 39%,#efeeb5 62%,#ededb1 64%,#ebebaf 75%,#e8e8aa 81%,#e5e5a7 100%); /* IE10+ */
+   background: linear-gradient(to bottom, #ffffcb 0%,#fdfdc9 13%,#f6f6c0 34%,#f7f7c1 36%,#f6f5bd 39%,#efeeb5 62%,#ededb1 64%,#ebebaf 75%,#e8e8aa 81%,#e5e5a7 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffcb', endColorstr='#e5e5a7',GradientType=0 ); /* IE6-9 */border-color: #ffffff #ffffff #ffffff;
+   margin-bottom: 4px;
+}
+
+div.jstree-default > ul > li.jstree-undetermined{
+   background: transparent;
+}
+
+.jstree-default .jstree-undetermined{
+   background-image: url("../../../../imgs/slider/partlySelectedArea.png");
+   background-position:0px;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+li.jstree-undetermined.jstree-open{
+   background: transparent;
+}
+
+ul li.jstree-leaf{
+   padding-top: 5px !important;
+}
+
+.jstree-default .jstree-no-icons .jstree-checkbox { display:inline-block; }
+.jstree-default .jstree-no-checkboxes .jstree-checkbox { display:none !important; }
+.jstree-default .jstree-checked > a > .jstree-checkbox {  background:url("checked.png") no-repeat; margin-left: -28px;
+   margin-right: 5px;}
+.jstree-default .jstree-unchecked > a > .jstree-checkbox ,.jstree-default .jstree-undetermined > a > .jstree-checkbox{  background:url("unchecked.png") no-repeat; margin-left: -28px;
+   margin-right: 5px;}
+.jstree-default .jstree-undetermined > a > .jstree-checkbox { background:url("unchecked.png") no-repeat; }
+
+#vakata-dragged.jstree-default ins { background:transparent !important; }
+#vakata-dragged.jstree-default .jstree-ok { background:url("d.png") -2px -53px no-repeat !important; }
+#vakata-dragged.jstree-default .jstree-invalid { background:url("d.png") -18px -53px no-repeat !important; }
+#jstree-marker.jstree-default { background:url("d.png") -41px -57px no-repeat !important; text-indent:-100px; }
+
+.jstree-default a.jstree-search {  }
+.jstree-default .jstree-locked a { color:silver; cursor:default; }
+
+#vakata-contextmenu.jstree-default-context, 
+#vakata-contextmenu.jstree-default-context li ul { background:#f0f0f0; border:1px solid #979797; -moz-box-shadow: 1px 1px 2px #999; -webkit-box-shadow: 1px 1px 2px #999; box-shadow: 1px 1px 2px #999; }
+#vakata-contextmenu.jstree-default-context li { }
+#vakata-contextmenu.jstree-default-context a { color:black; }
+#vakata-contextmenu.jstree-default-context a:hover, 
+#vakata-contextmenu.jstree-default-context .vakata-hover > a { padding:0 5px; background:#e8eff7; border:1px solid #aecff7; color:black; -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; }
+#vakata-contextmenu.jstree-default-context li.jstree-contextmenu-disabled a, 
+#vakata-contextmenu.jstree-default-context li.jstree-contextmenu-disabled a:hover { color:silver; background:transparent; border:0; padding:1px 4px; }
+#vakata-contextmenu.jstree-default-context li.vakata-separator { background:white; border-top:1px solid #e0e0e0; margin:0; }
+#vakata-contextmenu.jstree-default-context li ul { margin-left:-4px; }
+/* IE6 BEGIN */
+.jstree-default li, 
+.jstree-default ins,
+#vakata-dragged.jstree-default .jstree-invalid, 
+#vakata-dragged.jstree-default .jstree-ok, 
+#jstree-marker.jstree-default { _background-image:url("d.gif"); margin-bottom: 4px;}
+.jstree-default .jstree-open ins { _background-position:-72px 0; }
+.jstree-default .jstree-closed ins { _background-position:-54px 0; }
+.jstree-default .jstree-leaf ins { _background-position:-36px 0; }
+.jstree-default a ins.jstree-icon { _background-position:-56px -19px; }
+#vakata-contextmenu.jstree-default-context ins { _display:none; }
+#vakata-contextmenu.jstree-default-context li { _zoom:1; }
+.jstree-default .jstree-undetermined a .jstree-checkbox { _background-position:-20px -19px; }
+.jstree-default .jstree-checked a .jstree-checkbox { _background-position:-38px -19px; }
+.jstree-default .jstree-unchecked a .jstree-checkbox { _background-position:-2px -19px; }
+
+.root_node{
+   color: #999999 !important;
+   font-size: 15px !important;
+   font-weight: bold;
+   letter-spacing: -0.03em;
+   margin-left: -7px !important;
+}
+
+.leafDiv{
+   font-size: 13px;
+   margin-bottom: 4px;
+   margin-left: 46px;
+   white-space: normal;
+   width: 88%;
+}

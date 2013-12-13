@@ -1,0 +1,79 @@
+#moreInfoContainer{
+	width: 200px;
+	height: 100%;
+}
+.more_info{
+	font-size: 10px !important;
+color: #39C !important;
+font-weight: bold !important;
+font-variant: small-caps;
+
+}
+.more_info:hover{
+	color: #336699 !important;
+	cursor: pointer;
+}
+#moreInfoWrapper{
+	height: 100%;
+	width: 290px;
+	display: none;
+	top: 0;
+	position: absolute !important;
+	margin-left: 360px;
+	border-left: 1px dashed gray;
+	padding-top: 25px;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+#moreInfoContainer{
+	/*background-color:red;*/
+	width:100%;
+	height:100%;
+
+}
+#back{
+	/*font-size: 14px !important;*/
+}
+#back:hover{
+	cursor: pointer;
+}
+#moreInfoheader{
+	padding-top: 15px;
+}
+#formHistory label{
+	color: #999999;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.07em;
+    margin-bottom: 20px;
+}
+#DLA_name{
+	font-weight: bold;
+	padding:20px 0;
+}
+
+/* History Table*/
+#historytable{
+	width: 100%;
+	height:auto;
+	overflow: auto;
+	margin-bottom: 15%;
+}
+#historytable td{
+	font-size: 11px;
+	padding: 5px 0px;
+	color: #222;
+}
+#historytable td.summary span{
+       color: white;
+       background-color: black;
+       padding: 2px;
+}
+#historytable tr{
+	border-top: 1px solid #CCCCCC;
+}
+.div_historyTable{
+	width: 320px;
+	height: 300px;
+	overflow: auto;
+}

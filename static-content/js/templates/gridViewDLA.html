@@ -1,0 +1,165 @@
+    <!--First DLA-->
+<%  if(model.bookmarked){%>
+    <img class="pull-right bookMark" id="bookmark<%= model.id %>" 
+    src="imgs/bookmark_on.png" />  
+ <%}else {%>
+    <img class="pull-right bookMark" id="bookmark<%= model.id %>"
+    src="imgs/bookmark_off.png" /> 
+<%}%>  
+
+    <a class="editLink" href="#editdla/<%= model.id %>">
+
+    	<!-- img for folder -->
+
+    	<img class="ic pull-right teacherplan" style="display:none" id="folderimg<%= model.id %>"/> 
+
+    	<!-- Progress bars to indicate the status in colors-->
+        <p id="status1">
+        <%  if(model.stage.toUpperCase()==constants.readyToReview.toUpperCase()){%>
+            <img id="statusBar<%= model.id %>" class="status_img" 
+            src="imgs/Statusbar/readyToReview_statusBar.png"/>
+        <%}else if(model.stage.toUpperCase()==constants.readyToPublish){%>
+             <img id="statusBar<%= model.id %>" class="status_img" 
+            src="imgs/Statusbar/readyToPublish_statusBar.png"/>
+        <%}else if(model.stage.toUpperCase()==constants.draft.toUpperCase() ){%>
+            <img id="statusBar<%= model.id %>" class="status_img" 
+            src="imgs/Statusbar/draft_statusBar.png"/>
+        <%}else if(model.stage.toUpperCase()==constants.publish.toUpperCase()){%>
+            <img id="statusBar<%= model.id %>" class="status_img" 
+            src="imgs/Statusbar/published_statusBar.png"/>
+        <%}else if(model.stage.toUpperCase()==constants.unpublishedDisqualified.toUpperCase()){%>
+            <img id="statusBar<%= model.id %>" class="status_img" 
+            src="imgs/Statusbar/unpublished_statusBar.png"/>
+        <%}else if(model.stage.toUpperCase()==constants.error){%>
+        <img id="statusBar<%= model.id %>" class="status_img" 
+        src="imgs/Statusbar/error_statusBar.png"/>
+        <%}%>
+        </p>
+
+
+    	<!-- End Progress bars-->
+    	<%  if(model.stage==constants.readyToReview){%>
+    	<p id="status">READY FOR REVIEW</p> 
+    	<%}else if(model.stage==constants.readyToPublish){%>
+    	<p id="status">READY TO PUBLISH</p>
+        <%}else if(model.stage.toUpperCase()==constants.unpublishedDisqualified.toUpperCase()){%>
+        <p id="status">UNPUBLISHED / DISQUALIFIED</p>
+    	<%}else{%>
+    	<p id="status"><%= model.stage %></p> 
+    	<%}%>
+    	
+       
+        <p id="thumb" class="titleGrid" title="<%= model.title%>"><%= model.title %></p>
+        <!-- <p style="display:none;width:auto;" id="testTag"></p> -->
+        
+            
+         
+    	
+    	<div>
+
+    		<img 
+            src="<%= model.imgurl %>"
+            class="moveDown" 
+            alt="content thumbnail" 
+            id="im" /> 
+
+
+    		<p id="date" class="dateDown">
+    			<span id="mdfd">MODIFIED </span>
+    			<span id="dateSpan" class="pull-right">
+    				<%= model['modified-date'] %>
+    			</span>
+    		</p>
+
+    	</div>
+
+    		<!--End-->
+
+    		<div id="dlaeffect1<%= model.id %>" style="display:none" class="Tranform_Effect" >
+    		</div>
+    	</a>
+
+
+    <!-- end of dla -->
+
+    <div class="mouse-info">
+      <div class="info-pointer"></div>   
+      <h1>am the info</h1>
+       <!--  <article>
+            <header>
+                <hgroup>
+                
+                </hgroup>
+                <hgroup>
+                    
+                </hgroup>
+            </header>
+            
+            <div class="window">
+
+                <section class="description">
+                    <h5>Date created</h5>
+                    <p>30 oct 2012</p>
+                </section>
+
+                <section class="activity">
+                    <h5>Author</h5>
+                    <p>marie.white@cfy.org</p>                   
+                </section>
+                <section>
+                    <h5>Description</h5>
+                    <p>Don't jump to conclusions! Learn how to compare growth of exponential and polynomial functions.</p>
+                </section>
+                <section>
+                    <h5>Source Site</h5>
+                    <p>LearnZillion</p>
+                </section>
+
+                <section>
+                    <h5>Grade(s)</h5>
+                    <p><b>min-grade:1</b></p>
+                    <p><b>max-grade:10</b></p>
+                </section>
+
+                <section>
+                    <h5>Subject(s)</h5>
+                    <ul>
+                        <li>Math</li>
+                        <li>ELA</li>
+                        <li>Science</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h5>Subtopic(s)</h5>
+                    <ul>
+                        <li>Astronomy</li>
+                        <li>Biology</li>
+                        <li>Chemestry</li>
+                    </ul>
+                </section>
+
+                 <section>
+                    <h5>Standards</h5>
+                    <ul>
+                        <li>F.IF.4</li>
+                        <li>K.CC.1</li>
+                        <li>K.CC.2</li>
+                    </ul>
+                </section>
+
+                 <section>
+                    <h5>Activity Type</h5>
+                    <ul>
+                        <li>Watch</li>
+                        <li>Practice</li>
+                        <li>Play</li>
+                    </ul>
+                </section>                 
+
+            </div>
+          
+        </article> -->
+</div>
+
+

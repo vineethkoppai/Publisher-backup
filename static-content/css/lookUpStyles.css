@@ -1,0 +1,572 @@
+div.content.resizeLookUp{
+  width: 920px !important;
+  height:600px !important;
+  padding: 0 !important;
+  border-radius: 7px !important;
+  -webkit-border-radius: 7px !important;
+  -moz-border-radius: 7px !important;
+  position: relative !important;
+  right: 29% !important;
+  margin-top: -7% !important;
+  margin-left: -22% !important;
+}
+/*div.content.centerFacebox{
+  margin-left: -22% !important;
+}*/
+div.content#lookupID{
+  background-color: #CDCDCD !important;
+}
+
+
+/*Face box extra styles*/
+
+#addKeyWordsLookUp{
+  width: 192px !important;
+  height: 68px !important;
+  margin-bottom: 12px;right: 31px !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.extraStyleLookupKey{
+  background: none;
+  margin-top: 0px !important;
+  height: 14px;
+  width: 13px;
+  display: none;
+}
+
+.moveright {
+  margin-left: 26% !important;
+}
+
+.countDivLookup{  
+  border: none !important;
+  width: 19px;
+  background: none !important;
+  z-index: 1;
+  position: absolute;
+  padding: 0 !important;
+  font-size: 15px !important;
+  color: #CBCBCB !important;
+  font-weight: bold;
+  -webkit-border-radius: 7px !important;
+  margin-top: 0.2%;
+  right: 24px;
+  position: relative;
+  text-align: right;
+}
+#countTxt:focus{
+  border: none !important;
+}
+
+.LookUpHeader{
+  height: 65px;
+  font-size: 17px !important;
+}
+
+.domainInsideDiv{
+  border:1px solid red;
+  width: 100%;
+  height: auto;
+}
+
+#domainDiv{
+  width:195px;
+  height:118px;
+  border:1px solid #BCBCBC !important;
+  background-color: white;
+  margin-bottom: 23px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  overflow: hidden;
+  list-style-type: none;
+  color: #000000;
+}
+
+#domainDiv:hover{
+  overflow-y:scroll;
+}
+
+#lookUpList{
+  list-style-type: none;
+  float: right;
+  width: auto;
+}
+
+li.lookupLi{
+  text-align: right;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  margin-right: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+li.lookupLi:hover{
+  background-color: #A1E0FF;
+}
+
+hr.hrLine{
+  border-bottom: 1px dashed;
+  width:90%;
+  margin-top: 3% !important;
+}
+
+hr#hrDown{
+  border-bottom: 1px solid;
+  border-color: #C0C0C0;
+  margin-top: 10% !important;
+  width:90%;
+}
+
+.ButtonsLookUp{
+  margin-top: 2%;
+}
+
+.keyWordDiv{
+  height: 146px;
+}
+
+#LookUpContainer{
+  max-width: 320px;
+  background-color: #ECECEC !important;
+  min-width: 320px;
+  padding-right:0;
+  padding-left:20px;
+  padding-bottom:20px;
+  padding-top:20px;
+  height: 470px;
+  border-right:4px solid #999999;
+  border-top-left-radius: 7px;
+}
+
+.addStyleToLookupClose{
+  padding-top: 0;
+  height: 16px;
+}
+
+#btn_addLookUp{
+  background-image: url("../imgs/Buttons/addKeyword_btn.png");
+  border: medium none;
+  height: 25px;
+  margin-bottom: 18%;
+  margin-right: 18%;
+  margin-top: 13px;
+  vertical-align: baseline;
+  width: 110px;
+}
+
+#btn_addLookUp:hover{
+  background-image: url("../imgs/Buttons/addkeyword_pressed_btn.png");   
+}
+
+#LookUpContainer select option{
+  text-align: right;
+  float: right;
+}
+
+#LookUpCancel{
+  background-image: url("../imgs/Buttons/cancellookup.png");
+  background-position: -2px -3px;
+  background-repeat: no-repeat;
+  background-size: 71px 36px;
+  height: 33px;
+  width: 69px;
+}
+
+div.ButtonsLookUp{
+  width: 90%;
+}
+
+.lookUpSaveCancel{
+  width: 65px;
+}
+
+div.ButtonsLookUp button{
+  float: right;
+}
+
+#LookUpSave{
+  background-color: transparent;
+  background-image: url("../imgs/Buttons/savelookup.png");
+  background-position: -13px -5px;
+  background-repeat: no-repeat;
+  background-size: 94px 44px;
+  height: 33px;
+  margin-left: 6%;
+  padding-left: 3.5%;
+  width: 69px;
+}
+
+#facebox .popup{
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  top: 0 !important;
+}
+.mainStyleTxt{
+  width: 196px;
+  height: 25px !important;
+  border-radius: 7px;
+  -moz-border-radius: 7px !important;
+  -webkit-border-radius: 7px !important; 
+  border-top: 1px solid grey !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  padding-right: 15px !important; 
+}
+
+#lookUpSelect{   
+  width: 196px !important;
+  background-image: none !important;
+  background-color: white !important;
+  color: black !important;
+  border-top: 1px solid grey !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+#lookUpSelect1{
+  width: 196px !important;
+  background-image: none !important;
+  background-color: white !important;
+  color: black !important;
+  border-top: 1px solid grey !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+#addedKeyword1{
+  background-color: #ADB0B3;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: regular;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 3px;
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 5px;
+}
+
+#addedKeyword1:hover{
+  border: 1px solid #d8d8d8;
+  position:relative;
+  -moz-box-shadow: 0 0 5px black !important;
+  -webkit-box-shadow: 0 0 5px black !important;
+  box-shadow: 0 0 5px black !important;
+  zoom:1;
+  background-color: #E7EDB5 !important;
+  background-image: -moz-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E7EDB5), to(#d1d6a4)) !important;
+  background-image: -webkit-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: -o-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: linear-gradient(to bottom, #E7EDB5, #d1d6a4) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);  
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color:black;
+}
+
+#close_keyword_LookUp{
+  margin-top: -4px !important;
+}
+
+.keyword_imgClose1{
+  display:none;
+}
+
+.domainLookUp{
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+#facebox .keyword_div{
+  padding: 0 4px !important;
+  height: auto;
+  width: auto;
+  overflow: hidden; 
+}
+
+#facebox .node{
+  border: 1px solid transparent;
+  padding-top: 0 !important;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+/*facebox style*/
+#facebox .keyword_div:hover{
+  -moz-box-shadow: 0 0 10px black !important;
+  -webkit-box-shadow: 0 0 10px black !important;
+  box-shadow: 0 0 10px black !important;
+  zoom:1;
+  background-color: #E7EDB5 !important;
+  background-image: -moz-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E7EDB5), to(#d1d6a4)) !important;
+  background-image: -webkit-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: -o-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: linear-gradient(to bottom, #E7EDB5, #d1d6a4) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+    
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders 
+
+ /* filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);*/
+  border: none !important; 
+  box-shadow: none !important;
+}
+
+#close_keyword{
+  margin-top: -3px;
+  background: none !important;
+}
+
+.close_node:hover{
+  border: 1px solid #d8d8d8;
+  position:relative;
+  -moz-box-shadow: 0 0 10px black !important;
+  -webkit-box-shadow: 0 0 10px black !important;
+  box-shadow: 0 0 10px black !important;
+  zoom:1;
+  background-color: #E7EDB5 !important;
+  background-image: -moz-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E7EDB5), to(#d1d6a4)) !important;
+  background-image: -webkit-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: -o-linear-gradient(top, #E7EDB5, #d1d6a4) !important;
+  background-image: linear-gradient(to bottom, #E7EDB5, #d1d6a4) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+    
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color:black;
+  background-color:#E7EDB5;
+}
+
+#close_node{
+  margin-left: -4px;
+  margin-top: -4px;
+  display: inline-block;
+}
+
+#outerSliderDiv{
+  margin-left: 0px !important;
+}
+
+#LookUpKeywords{
+  height: 68px !important;
+  border: none !important;
+}
+
+#keywordDivId{
+  display: none;
+}
+.selected-starnd{
+  background-color: #A1E0FF;
+}
+#loadingLookup{
+  background-image: url("../imgs/Loading_Animation.gif");
+  background-size: cover;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  width: 50px;
+  z-index: 10;
+}
+
+
+#lookupSpinner img{
+  margin-top: 37%;
+  margin-left: 43%;
+  margin-right: auto;
+  position: relative;
+}
+.lookup-bottom-content{
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  border-top: 5px solid #aaa;
+}
+.bottom-btns-div{
+  margin-bottom: 0.5%;
+  margin-right: 1%;
+  margin-top: 0.5%;
+}
+.standards-list{
+  background-color: white;
+  height: 110px;
+  padding-left: 1em;
+  padding-top: 0.2em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+}
+.standards-list div{
+  font-size: 12px;
+}
+.standards-list div b{
+  font-size: 15px;
+  font-family: bold;  
+}
+.rating-uti-main{
+  border-radius: 3px;
+border: 1px solid #999;
+  display: none;
+  position: fixed;
+  width: 13%;
+  margin-top: 14%;
+  right: 17%;
+  box-shadow: -2px 2px 2px #777;
+   background: #ffffcb; /* Old browsers */
+   background: -moz-linear-gradient(top, #ffffcb 0%, #fdfdc9 13%, #f6f6c0 34%, #f7f7c1 36%, #f6f5bd 39%, #efeeb5 62%, #ededb1 64%, #ebebaf 75%, #e8e8aa 81%, #e5e5a7 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffcb), color-stop(13%,#fdfdc9), color-stop(34%,#f6f6c0), color-stop(36%,#f7f7c1), color-stop(39%,#f6f5bd), color-stop(62%,#efeeb5), color-stop(64%,#ededb1), color-stop(75%,#ebebaf), color-stop(81%,#e8e8aa), color-stop(100%,#e5e5a7)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top, #ffffcb 0%,#fdfdc9 13%,#f6f6c0 34%,#f7f7c1 36%,#f6f5bd 39%,#efeeb5 62%,#ededb1 64%,#ebebaf 75%,#e8e8aa 81%,#e5e5a7 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(top, #ffffcb 0%,#fdfdc9 13%,#f6f6c0 34%,#f7f7c1 36%,#f6f5bd 39%,#efeeb5 62%,#ededb1 64%,#ebebaf 75%,#e8e8aa 81%,#e5e5a7 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(top, #ffffcb 0%,#fdfdc9 13%,#f6f6c0 34%,#f7f7c1 36%,#f6f5bd 39%,#efeeb5 62%,#ededb1 64%,#ebebaf 75%,#e8e8aa 81%,#e5e5a7 100%); /* IE10+ */
+   background: linear-gradient(to bottom, #ffffcb 0%,#fdfdc9 13%,#f6f6c0 34%,#f7f7c1 36%,#f6f5bd 39%,#efeeb5 62%,#ededb1 64%,#ebebaf 75%,#e8e8aa 81%,#e5e5a7 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffcb', endColorstr='#e5e5a7',GradientType=0 ); /* IE6-9 */border-color: #ffffff #ffffff #ffffff;
+}
+.rating-utility{
+  z-index: 100;
+  padding-left: 8%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 2%;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: normal;  
+}
+.icon-question-sign{
+  margin-left: .5em;
+}
+.nav-gap{
+  width: 10%;
+  height: 1px;
+}
+.rate-nav-ul li{
+  background-color: white;
+  color: #A1E0FF;
+  cursor: pointer;
+  float: left;
+  text-align: center;
+  list-style: none;
+}
+.nav-gap{
+  background-color: transparent !important;
+}
+.rate-nav-ul{
+  margin-left: auto;
+  margin-right: auto;
+  // width: 25%;
+  padding-left: 7%;
+}
+.rate-page-count-ul li{
+  float: left;
+  list-style: none;
+}
+.rate-page-count-ul{
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+.rate-page-count{
+  margin-top: 10%;
+}
+li.prev{
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  width: 60px;
+}
+li.next{
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  width: 60px;
+}
+.rate-arrow{
+  background-image: url("../imgs/Buttons/rateNav.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 44px;
+  margin-top: 35%;
+  position: absolute;
+  width: 22px;
+  background-size: contain;
+  right: 100%;
+}
+.moveToright{
+  right: 0px;
+}
+.moveToLeft{
+  right:0px;
+}
+.showThis{
+  display: block;
+}
+.hideThis{
+  display: none;
+}
+.removeBorder{
+  border: 0px solid;
+}
+.all-standards{
+  height: 9.5em;
+  overflow: auto;
+}
+#allStdSub .keyword_imgClose{
+  margin-top: -7%;
+}
+.save-std-btn{
+  background-image: none;
+  background-color: #A1E0FF;
+}
+.save-std-btn:hover{
+  background-color: #A1E0FF;
+}
+#allStdSub .node label{
+  color: black;
+}
+#allStdSub .node:hover{
+  background: none;
+  background-color: #CCCCCC;
+  box-shadow: none !important;
+  color: white;
+}
+#allStdSub .nodeText{
+  width: 50px;
+}
+.enabled-save{
+  background: none;
+  background-color: blue;
+}
+.btn-primary{
+  cursor: pointer;
+}
+#standardSave[disabled]{
+  background-image: none;
+  background-color: #A1E0FF;
+}
+input[name^=standardRating]:checked + label.rating-label{
+  background: #41B6DD;
+  color: brown;
+}
+#facebox input[name^=standardRating]:checked{
+  display: inline-block;
+}
+.rate-info-p{
+  color: red;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+
+@-moz-document url-prefix() {
+    // .treeView-Div { height: 70.1%; }
+}

@@ -1,0 +1,107 @@
+button#add{
+  margin-top:-10px;
+  margin-left: 10px;
+  width: 65px;
+}
+button#done{
+  float:right;
+  margin-top: 21px;
+  height:32px;
+}
+#inputEmail{
+  width:275px;
+  height:28px;
+  border-radius:7px ;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  padding-left: 10px !important;
+}
+#user-role{
+  border-radius:7px ;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  margin-left: 10px;
+  width: 135px;
+}
+div#userListMainDiv{
+  padding-top:10px;
+  background-color: white !important;
+  overflow: auto;
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  padding-top: 10px;
+  width: 498px;
+  height: 228px !important;
+}
+ul.ul_addedUser{  
+  height:190px !important;
+}
+#addedUserMainDiv{
+  color: #666666;
+  font-size: 12pt !important;
+  margin-left: -13px;
+  margin-top: 9px;
+  padding-bottom: 7px;
+  padding-left: 9px !important;
+  padding-right: 5px;
+  padding-top: 2px;
+}
+#addedUserMainDiv:HOVER {
+  background-color: #eff3ce!important;
+  color:#000000 !important;
+  border:none !important;
+  border-radius:7px !important;
+  -webkit-border-radius:7px !important;
+  -moz-border-radius:7px !important;
+  font-size: 12pt;
+  
+}
+#addedUserMainDiv span{
+  border-style: none !important;
+}
+#userListMainDiv #user-list li{
+  background: none !important;
+  margin-right:5px !important;  
+}
+#userListMainDiv #user-list li:HOVER{
+  color:black;
+}
+#user-list{
+  margin-left: 0 !important;
+}  
+#user-list #lii{
+  margin-left: 22px;
+}
+.userSpinner{
+  height: 70px;
+  margin-left: 40%;
+  width: 60px;
+  margin-right: auto;
+  margin-top: 16%;
+  position: absolute;
+}
+ul#user-list li{
+  list-style:none;
+  padding:5px;
+  margin-left:2px;
+  margin-right:10px;
+}
+ul#user-list li:hover{
+  color:white;
+  background-color:#dddddd;
+  -webkit-border-radius:6px;
+}
+.usrRole{
+  margin-right:124px;  
+}
+.addView{
+  margin-left:0px;
+}
+.deleteUser{
+  background-image: url('../imgs/close_tab.png');
+  width:15px;
+  height:15px;
+  float: right;
+  display: none; 
+}

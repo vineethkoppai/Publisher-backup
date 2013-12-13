@@ -1,0 +1,21 @@
+<div id='addedNode'>
+ 
+ <span class='nodeText'>
+    <%=model.name %>
+    </span> 
+    <!-- <div> -->
+    	<input type="radio" name="standardRating<%= model.id %>" id="rating3<%= model.id %>" value="3"> 
+    	<label class="rating-label" for="rating3<%= model.id %>">3</label>
+        
+		<input type="radio" name="standardRating<%= model.id %>" id="rating2<%= model.id %>" value="2"> 
+		<label class="rating-label"for="rating2<%= model.id %>">2</label>
+ 
+		<input type="radio" name="standardRating<%= model.id %>" id="rating1<%= model.id %>" value="1"> 
+		<label  class="rating-label" for="rating1<%= model.id %>">1</label>
+ 
+		<input type="radio" name="standardRating<%= model.id %>" id="rating0<%= model.id %>" value="0"> 
+		<label  class="rating-label"  for="rating0<%= model.id %>">0</label>
+    <!-- </div> -->
+    <img id='close_node' class='keyword_imgClose' src='imgs/Buttons/closebtn.png' />
+ 
+</div>

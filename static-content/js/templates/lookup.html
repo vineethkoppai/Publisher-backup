@@ -1,0 +1,149 @@
+
+
+
+    </script>
+<script LANGUAGE="JavaScript">
+    function CountLeft(field, count, max) 
+    {
+      if (field.value.length > max)
+        field.value = field.value.substring(0, max);
+      else
+        count.value = max - field.value.length;
+    }
+</script>
+
+ 
+
+
+    
+<div id="LookUpContainer" class="lookUpContainerClass">
+
+        <div class="LookUpHeader">
+          <span>Standard Look Up</span> 
+          <hr class="hrLine"/>
+        </div>
+        
+        <form class="accordian-form">              
+               <div class="row-fluid" id="MainDivLookUp">
+                       <!-- Slider start -->
+                       <div class="row-fluid sliderDiv">
+                             <div class="span3"><label style="font-size:13px !important;">Grade</label></div>
+                             <div class="span9" id="outerSliderDiv">
+                                 <p style="display:none;">
+                                    <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;display:none;" />
+                                 </p>                          
+                                 <img src="imgs/slider/RangeInLookUp1.png" style="position: relative;width:90%;bottom:22px;">
+                                 <br/>
+                                 
+                                 <div class="span10">
+                                  <div id="slider-range1"></div> 
+                                </div>
+                            </div>
+                      </div>
+                  
+                </div>
+                       <!-- Slider end -->
+                <div class="row-fluid" style="display:none;">
+                          <div class="span3"><label>Subject</label></div>
+                          <div class="span9">
+                            <input class="mainStyleTxt displaySub" type="text" readonly />
+                          </div>
+                </div>
+
+                <div class="row-fluid">
+                          <div class="span3"><label id="domainStrand" style="font-size:13px !important;"></label></div>
+                                <ul id="domainDiv" class="span9">
+                                <li class="lookupLi selected-starnd" id="liall">
+                                        All
+                                </li>
+                                   <!-- <li class="lookupLi"> -->
+                                   <% _(model.strandDomain).each(function(obj) { %>
+                                      <li class="lookupLi" 
+                                      id="li<%= obj.id %>" >
+                                        <%= obj.data %>
+                                      </li>
+                                   <% }); %>
+                                 </ul>
+                            <!-- </div> -->
+                          <!-- </div> -->
+                </div>
+                         
+                <div class="row-fluid keyWordDiv">
+                     <div class="span3">
+                      <label style="font-size:13px !important;">Keyword</label>
+                    </div>
+                                  
+                    <div class="text1 span9" id="addKeyWordsLookUp">
+                      <!-- <textarea class="span12" id="LookUpKeywords"></textarea> -->
+                        <div class="div_inside" id="addKeyWords_Inside"></div>
+                    </div>
+                             
+
+                    <div class="offset2 moveRight">
+                        <input type="text" id="addKeyWordTxtLookUp" class="mainStyleTxt"  onKeyDown="CountLeft(Count_text3, Count_left3,30);" onKeyUp="CountLeft(Count_text3,Count_left3,30);" name="Count_text3" />
+
+                     <span id="" class="">
+                       <input class="countDivLookup" readonly type="text" name="Count_left3" size="3" value="30" id="countTxt">
+                     </span>
+                     
+                     <button class="pull-right" id="btn_addLookUp" type="button"></button>
+                   </div>
+
+                </div>
+                <hr id="hrDown"/>    
+                <!-- <div class="ButtonsLookUp row-fluid">
+                      <button id="LookUpSave" class="btn lookUpSaveCancel" type="button"></button>
+                      <button id="LookUpCancel" class="btn lookUpSaveCancel" type="button"></button>
+                </div>  -->
+                       
+            </form>
+        <div id="treeViewDiv" class="treeView-Div">
+         
+         <!-- FOR RATING THE CHILD NODES -->
+          <div id="ratingUtiMain" class="rating-uti-main">
+            <div class="rate-arrow" id="rateArrow"></div>
+            <div id="ratingUtility" class="rating-utility">
+               
+              Please rate<i class="icon-question-sign"></i>
+              <h4>RL.5.1</h4>
+              <div class="rates" id="stdRates">
+                <form>
+                  <input type="radio" id="option0" name="rate" value="very-week"/> 0: Very Weak/None<br>
+                  <input type="radio" id="option1" name="rate" vlaue="limited"/> 1: Limited<br>
+                  <input type="radio" id="option2" name="rate" value="strong"/> 2: Strong<br>
+                  <input type="radio" id="option3" name="rate" value="superior"/> 3: Superior
+                </form>
+              </div>
+              <div class="rate-page-nav">
+                <ul class="rate-nav-ul">
+                  <li class="prev">Prev</li>
+                  <li class="nav-gap"></li>
+                  <li class="next">Next</li>
+                </ul>
+              </div><br>
+              <div class="rate-page-count">
+                <ul class="rate-page-count-ul">
+                  <li class="current-count">1</li>
+                  <li>/</li>
+                  <li class="total-count">2</li>
+                </ul>
+              </div>
+            </div>           
+          </div>
+
+          <!-- RATING END -->
+        </div>
+        <div id="searchResult" class="treeView-Div" style ="display:none" ></div>
+        <div id="noSearchResult" class="treeView-Div" style ="display:none" >
+          <p>No matching search result found</p>
+        </div>
+         <div id="lookupSpinner" class="treeView-Div" style ="display:none" >
+        </div>
+       
+</div>
+    
+
+     
+     
+ 
+     

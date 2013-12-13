@@ -1,0 +1,40 @@
+.userRoleDiv{
+	font-size:8px;
+	position:relative;
+	right:0px;
+	display:block;
+	text-align:right;
+}
+#removeUserDiv{
+  height:50px !important;  
+}
+#popup_box { 
+    display:none; /* Hide the DIV */
+    position:fixed;  
+    _position:absolute; /* hack for internet explorer 6 */  
+    height:300px;  
+    width:600px;  
+    background:#FFFFFF;  
+    left: 300px;
+    top: 150px;
+    z-index:100; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+    margin-left: 15px;  
+    /* additional features, can be omitted */
+    border:2px solid #ff0000;      
+    padding:15px;  
+    font-size:15px;  
+    -moz-box-shadow: 0 0 5px #8C8C8C;
+    -webkit-box-shadow: 0 0 5px #8C8C8C;
+    box-shadow: 0 0 5px #8C8C8C;
+}
+div#addUsersDiv{
+	position:absolute;
+	top:100px ;
+	left:350px ;
+	height:300px ;
+}
+#container {
+    background: #d2d2d2; /*Sample*/
+    width:100%;
+    height:100%;
+}

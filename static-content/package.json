@@ -1,0 +1,24 @@
+{
+    "name": "parsetodo",
+    "description": "Example application using grunt-contrib-jasmine and grunt-template-jasmine-requirejs",
+    "version": "0.1.0",
+    "author": {
+        "name": "Praveen",
+        "email": "pdnsjce@gmail.com",
+        "url": "http://floydpraveen.in/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/floydpraveen/parse-todo.git"
+    },
+    "scripts": {
+        "test": "grunt test"
+    },
+    "devDependencies": {
+        "grunt-contrib-jasmine": "latest",
+        "grunt": "0.4.x",
+        "grunt-exec": "0.4.x",
+        "grunt-cli": "0.1.x"
+    },
+    "dependencies": {}
+}

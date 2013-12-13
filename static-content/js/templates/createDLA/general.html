@@ -1,0 +1,94 @@
+<div class="row-fluid">
+    <div class="span4">
+        <img style="margin-left:-11px;margin-top: -4px;" src="imgs/Buttons/required.png" width=7px height=7px/>
+        <label style="display:inline-block;">URL</label>
+
+        <div class="pull-right lock_off" id="lock_icon"></div>
+    </div>
+    <div class="span8">
+        <input class="span12" type="text" id="txt_url" placeholder="URL" />
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span4">
+        <label>Source Site</label>
+    </div>
+    <div class="span8">
+        <% _(formModel.contentTypeMetaData).each(function(obj) { if(obj.name===constants.sourceSite){ %>
+            <input id="txt_sourceSite" 
+            class="span12" 
+            type="text" 
+            metadataId=<%=obj.id %>
+            >
+            <%}})%>
+                <div id="autocomplete" class="autocomplete-div"></div>
+    </div>
+</div>
+
+<img class="publish_Mand publishMandatory" 
+	src="imgs/Buttons/pub_required.png" 
+	style="position:relative; margin-top:-24px;">
+
+
+<div class="row-fluid">
+    <div class="span4">
+        <label style="display:inline-block;width:60px; margin-bottom: 85px;">Thumbnail Image
+        </label>
+    </div>
+    <div class="span8">
+        <div id="imgUpload" class="row-fluid">
+            <img src="imgs/Buttons/upLoadBtn.png" id="upLoadImageDisable" class="span6" />
+            <img src="imgs/Buttons/upLoadBtn.png" id="upLoadImage" class="span6" />
+            <form id="fileForm" enctype="multipart/form-data" method="POST">
+                <input type="file" id="img" name="img">
+                <input type="hidden" id="contentId" name="contentId">
+                <% _(formModel.contentTypeMetaData).each(function(obj) { if(obj.name===constants.thumbnailURL){ %>
+                    <input type="hidden" id="imgMetadataId" name="contentTypeImgMetaDataId" value=<%=obj.id %>>
+                    <% }}) %>
+                        <input type="hidden" name="contentImgMetaDataId" id="contentImgMetaDataId">
+            </form>
+            <img id="thumbnailSample" class="img-preview" />
+            <label id="noFile" class="fileMessage">No file choosen</label>
+            <label id="errorImage" class="fileMessage">Uploaded file is not an Image</label>
+            <!-- <div id='preview'> -->
+        </div>
+    </div>
+</div>
+
+
+<div class="row-fluid">
+    <div class="span4">
+        <label>Description</label>
+    </div>
+    <div class="span8" style="float:right;">
+        <textarea class="span12" id="txt_desc_general" onKeyDown="CountLeft(txt_desc_general, left,100);" onKeyUp="CountLeft(txt_desc_general, left,100);" maxlength="100" />
+
+        <span id="left2" class="pull-right">
+            <input class="remove" disabled="disabled" readonly="readonly" type="text" id="left" size="3" value="100">
+        </span>
+    </div>
+</div>
+
+<div class="row-fluid ">
+    <div class="span4">
+
+        <label style="position: relative;top: 56px;">
+            <img class="publish_Mand publishMandatory" src="imgs/Buttons/pub_required.png">Grade
+        </label>
+    </div>
+    <div class="span8">
+        <p class="slider_p">
+            <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;display:none;" />
+        </p>
+        <!--Slider-->
+        <img src="imgs/slider/staus.png" style="position:relative;width:100%;height: 30px;">
+        <br/>
+
+        <div class="span12">
+            <div id="slider-range"></div>
+        </div>
+
+        <!--Slider Ends-->
+    </div>
+</div>

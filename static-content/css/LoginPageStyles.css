@@ -1,0 +1,509 @@
+@CHARSET "UTF-8";
+
+/* from new style.css */
+.disabled-send{
+  	opacity: 0.17;
+  	cursor: default;
+}
+.dla-row {
+	margin-bottom: 20px;
+}
+.tooltip{
+	margin:8px;
+	padding:8px;
+	border:1px solid blue;
+	background-color:yellow;
+	position: absolute;
+	z-index: 2;
+}
+
+/*Login styles*/
+body.loginPage_body{
+	background-color: #e7edb5;
+}
+.loginForm{
+	margin-left: auto;
+    margin-right: auto;
+	margin-top:4%;
+	width:350px;
+	height:560px;
+	background-color: #ececec !important;
+	border-radius: 7px; 
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-moz-box-shadow: 0 0 20px #8C8C8C;
+    -webkit-box-shadow: 0 0 20px #8C8C8C;
+    box-shadow: 0 0 20px #8C8C8C;
+}
+input.txt_login {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius: 5px;	
+	box-shadow: none;
+	height: 25px;
+	border: 3px solid #ffffff;
+	padding-bottom: 2px;
+    padding-top: 2px;
+    width:250px; 
+    box-shadow:none; 
+}
+.txtContainer{
+	width: 268px;
+	margin-left: 7.5%;
+	margin-bottom: 32px;
+}
+.loginButtonWrapper{
+	width: 115px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 27px;
+}
+.errorDiv{ /*Login error*/
+	height: 45px;
+}
+.errorBack{
+  	margin: auto;
+	width: 315px;
+	height: 223px;
+}
+#redBg{
+	background-image: url("../imgs/errorBg.png");
+	background-repeat: no-repeat;
+	background-size: 315px 223px;
+}
+.login_button{
+	background-image: url("../imgs/signInDefault.png");
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-size: 82px 34px;
+    border: medium none;
+    height: 40px;
+    margin-left: 6px;
+    width: 90px;
+}
+.login_button:hover{
+	background: url("../imgs/signInpressed.png") no-repeat;
+	background-size: 82px 34px;
+}
+.heading{		
+	border-width: 0px;
+	border-style: solid;
+}
+p.welcome_login{
+	text-align: center;
+	padding-top: 70px;
+	margin-bottom: 65px;
+}
+p.welcome_login img{
+	padding-top:7px;
+}
+.pli {
+	/*text-align: center;*/
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	height: 40px;
+}
+.frgtMsg{
+	margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+#signInMsg{
+     background-color:#efc4c4;
+     
+}
+.input_fields{
+     background-color:#efc4c4;
+     padding-left: 27px;    
+     padding-top: 10px;
+     margin-top: -33px;
+     padding-bottom: 22px;
+     margin-left: -24px;
+     width: 285px;
+     -webkit-border-radius: 0px 0px 7px;
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+	 -moz-border-radius: 7px;
+	 border-radius:7px;
+}
+.span_pli{
+	margin-top: 10px;
+	margin-left: 34%;
+}
+p.remember{
+	color: #999999;
+	height: 22px;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/*Styles of Forget password*/
+.forgotPwd{
+  	background-color: #ECECEC;
+    border-color: #FFFFFF;
+    border-radius: 7px 7px 7px 7px;
+    border-style: groove;
+    border-width: 0;
+    box-shadow: 0 0 20px #8C8C8C;
+    height: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    width: 350px;
+    display:none;
+}
+fieldset.field button{
+    background-color: transparent;
+    border: none;
+    height: 38px;
+    width: 90px;
+    outline: none;
+    margin-left: 8px;
+}
+button.frgtBtn{
+  position: static;
+  width: 90px;
+}
+button.btn_forgot_send{	 
+	background: url("../imgs/Buttons/forgot_send.png") no-repeat;
+	background-size: 80px 33px;
+	margin-left:40px;
+    margin-right:14px;
+}
+button.btn_forgot_cancel{    
+	background: url("../imgs/Buttons/Reset_cancel.png") no-repeat;
+	background-size: 80px 33px ;	
+}
+input[type="text"]:focus,input[type="password"]:focus,textarea:focus{
+	border: 3px solid #24aad7  !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	padding-bottom: 1px !important;
+}
+.error{
+	color:red !important;
+}
+
+/*END*/
+/*Styles of reset Password*/
+.resetpwd{
+  	background-color: #ECECEC !important;
+	border-color: #FFFFFF;
+	border-radius: 7px 7px 7px 7px;
+	border-style: groove;
+	border-width: 0;
+	box-shadow: 0 0 20px #8C8C8C;
+	height: 560px;
+	margin-left: 40%;
+	margin-right: 50%;
+	margin-top: 6%;
+	position: absolute;
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0px;
+	right: 0px;
+}
+#reset_field .txt_reset{
+	box-shadow: none;
+	background-image: url("../imgs/txtback1.png");
+	background-position: -1px -1px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border-color: transparent; 
+	outline-style: none;
+	height: 24px;
+}
+#reset_field .txt_reset:focus{
+
+	background-image: url("../imgs/TxtBgFocus1.png");
+	box-shadow: none !important;
+}
+button.btn_reset_send,button.btn_reset_cancel{
+	border: none;
+	height:35px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color:white;
+	font-size:17px;
+	width: 90px;
+}
+button.btn_reset_send{	 
+	background: url("../imgs/Buttons/continue.png") no-repeat;
+	background-size: 83px 36px;
+	margin-left: 7.5%;
+	margin-right: 11px;
+}
+button.btn_reset_cancel{	
+	background: url("../imgs/Buttons/Reset_cancel.png") no-repeat;
+	background-size: 82px 35px;	
+}
+.error{
+     color:red;
+     margin-left: 75px;
+     margin-right: 65px;
+}
+p.passwd_rule{    
+    margin-left: 19%;
+    width: 210px;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 19px;
+    text-align: center;
+}
+.error_reset{
+	color: red;
+	margin-left: 19.5%;
+}
+.small_text{
+     font-size:11px;
+}
+fieldset.field p.small_text{
+     margin-top:0px;
+     font-weight:bold;
+     position:relative;
+     height:25px;
+     height: 17px;
+     margin-bottom: 11px;
+}
+
+/* end*/
+
+/* Password Strength*/
+#result{
+    font-size:12px;
+    height:30px;
+}
+#makeRed{
+    color:red;
+}
+a#contactUs{
+    text-decoration:underline;
+}
+.resultSpan{
+	height: 20px;	
+	width: 270px;
+	margin: auto;
+}
+div#frgt_Buttons{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 215px;
+}
+.forgotPara{
+	margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+}
+div#reset_Buttons {
+    margin-bottom: 20px;
+}
+.forgot_send_disabled{
+    background-color:red !important;
+    background-image:none !important;
+}
+.short {
+    background:url("../imgs/alert.png") no-repeat;
+    position:absolute;
+    right: 13px;
+    padding-left:20px;
+	color:#FF0000;
+}
+.weak{
+	color:#E66C2C;
+}
+.good{
+	color:#2D98F3;
+}
+.strong{
+	color:#006400;
+}
+/* end*/
+
+.field{
+	margin-left:auto;
+	margin-right:auto;
+}
+.resetFld{
+    margin-left: 19%;	
+}
+label.incorrectPwd{
+	text-align:center;
+	text-transform: none;
+	font-size: 13px;
+	color: #f03d23;
+	font-weight:bold;
+}
+a.forgetSpan{
+	color: #999999;
+    font-size: 12px;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+a.forgetSpan span{
+     font-weight:bold;
+}
+::-webkit-scrollbar
+{    
+	height: 8px;
+} 
+.noEmailExists {
+    background:url("../imgs/alert.png") no-repeat;
+    padding-left:20px;
+  	color:#FF0000;
+}
+.noEmailExists a {
+    padding-left:5px;
+    color:#FF0000;
+}
+.emailSent {
+     position:absolute;
+     padding-left:20px;
+     color:#31B404;
+}
+#login-password::-webkit-input-placeholder,
+#login-username::-webkit-input-placeholder,
+#login-password:-moz-placeholder,
+#login-username:-moz-placeholder {
+     color:#080808;
+     font-weight:bold;     
+} 
+.loginData,.loginData:focus{
+	
+	background-image: url("../imgs/txtback.png") !important;
+	background-position: -3px -3px;
+	background-repeat: no-repeat;
+	background-size: 265px 35px !important;
+	background-color: transparent !important;
+	border-color: transparent !important; 
+	outline-style: none !important;
+}
+.loginData:focus{
+
+	background-image: url("../imgs/TxtBgFocus.png") !important;
+	background-size: 268px 35px !important;
+	box-shadow: none !important;
+}
+.frgt_text{
+	background-image: url("../imgs/txtback.png") !important;
+	background-position: -3px -3px;
+	background-repeat: no-repeat;
+	background-size: 267px 35px !important;
+	background-color: transparent !important;
+	border-color: transparent !important; 
+	outline-style: none !important;
+}
+.frgt_text:focus{
+	background-image: url("../imgs/TxtBgFocus.png") !important;
+	background-position: -3px -3px;
+	background-repeat: no-repeat;
+	background-size: 268px 35px !important;
+	box-shadow: none !important;
+}
+div#content{
+	border-width:0px;
+	border-style: groove;
+	height: 610px;
+	width:410px;
+	position: absolute;
+	left:450px;
+	top:100px;
+	border-radius: 7px; 
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	background-color: #cccccc;
+}
+a:HOVER{
+	text-decoration: none;
+}
+#chkbx{
+	display: block !important;
+	position: absolute;
+	margin-top:-1% !important;
+	margin-right:1% !important;
+}
+img#play_btn{
+    position: relative;
+     top: -35px;
+}
+.showItem{
+     visibility:visible !important;
+}
+#go_back_onhover:hover{
+     z-index:-1 !important;
+     position:relative !important;
+}
+
+/* For each thumbnail design */
+#statusBar{
+     width:39px !important;
+     height:3px !important;
+}
+#mdfd{
+     color: #DADADA !important;
+	font-weight: bold;
+	text-transform: uppercase !important;
+	font-size: 8px;
+}
+.ic{    				/*Positioning the star icon*/
+	margin-top: -06px;
+}
+#bookmark{
+     margin-right: -4px !important;
+     margin-top: -9px !important;
+     z-index:10;
+     position:relative;
+}
+#folderimg{
+     z-index:-10;
+}
+#im{				/*For image*/
+	border-color: blue;
+    height: 80px !important;
+    margin-left: 9px !important;
+    /*margin-top: 17px;*/
+    width: 140px !important;
+}
+span#dateSpan{
+	font-size: 10px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.bottom{
+	position: absolute;
+	bottom: -81px !important;
+	border: 1px solid red;
+	width: 880px;
+	height: 46px;
+}
+.outerDiv{
+	overflow: auto;
+}
+.listViewcontainer{
+	position: absolute;
+    overflow: hidden;
+    height: 100px; 
+    margin-bottom: 0px;
+    padding: 0;
+    z-index: -100;
+}  
+ 
+  /*Face box extra styles*/
+#popUp_LookUp{
+  	height: 10px;
+}
+#forgot-email{
+  	/*background-image: url("../imgs/LogintextBox.png") !important;*/
+	background-position: -5px -4px;
+	background-repeat: no-repeat;
+	background-size: 272px 36px;
+	background-color: transparent;
+	border-color: transparent; 
+}

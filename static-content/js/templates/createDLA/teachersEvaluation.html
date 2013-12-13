@@ -1,0 +1,123 @@
+			<div class="disableTeacherEval">
+			</div>
+
+		    <div class="row-fluid">
+		    	<div class="span4">
+		    		<label style=" font-size: 13px !important;width: 101px;">Teaches Content?</label>
+		    	</div>
+		    	<div class="span8" style="margin-bottom: 18px;">
+		    	<% _(model.contentTypeMetaData).each(function(obj) {
+					if(obj.name ===constants.teachesContent){ %>
+		    		<p style="display:inline-block"><input type="radio" id="rad41" class="regular-radio" name="radioTeacherscontent" value="true"
+		    		metadataId = <%=obj.id %> ><label for="rad41">Yes</label></p>
+		    			&nbsp;&nbsp;&nbsp;
+					<p style="display:inline-block"><input type="radio" id="rad42" class="regular-radio" name="radioTeacherscontent" value="false" 
+					metadataId = <%=obj.id %> ><label for="rad42">No</label></p>
+					<% }})  %>
+				</div>
+		    </div> 
+
+		    <div class="row-fluid">
+		    	<div class="span4"><label>Bloom's Taxonomy</label></div>
+		    	<div class="span8">
+		    		<div id="slct_blooms" class="wrapper-dropdown-3 " tabindex="1">
+		    			
+		    			<% _(model.contentTypeMetaData).each(function(obj) {
+						  if(obj.name === constants.blooms ){ 
+	obj.options = 	_.sortBy(obj.options, function(num){ return num.id; });
+						  	%>
+
+						<span style="" id="blooms_span" class="dropdown-span" metadataId = <%=obj.id %> >Select</span>
+						
+						<ul class="dropdown">
+							<% _(obj.options).each( function(opt) { %>
+							<li>
+								<a href="#" ><%= opt %></a>
+							</li>
+							 <% }) } }) %>
+						</ul>
+					</div>
+				</div>
+		    </div>
+		    <div class="row-fluid">
+		    	<div class="span4"><label>Feedback</label></div>
+		    	<div class="span8">
+		    		<div id="slct_feedback" class="wrapper-dropdown-3 " tabindex="1">
+		    			
+		    			<% _(model.contentTypeMetaData).each(function(obj) {
+						  if(obj.name === constants.feedback ){ 
+	obj.options = 	_.sortBy(obj.options, function(num){ return num.id; });
+						  	%>
+
+						<span style="" id="feedback_span" class="dropdown-span" is-multivalued = <%=obj['is-multivalued'] %> metadataId = <%=obj.id %> >Select</span>
+						
+						<ul class="dropdown">
+							<% _(obj.options).each( function(opt) { %>
+							<li>
+								<a href="#" ><%= opt %></a>
+							</li>
+							 <% }) } }) %>
+						</ul>
+					</div>
+				</div>
+		    </div>
+
+		    <!-- <div class="row-fluid">
+		    	<div class="span4"><label>Possible Duration</label></div>
+		    	<div class="span8">
+		    		<div id="slct_duration" class="wrapper-dropdown-3 " tabindex="1">
+		    			
+		    			<% _(model.contentTypeMetaData).each(function(obj) {
+						  if(obj.name === constants.possibleDuration){ 
+	obj.options = 	_.sortBy(obj.options, function(num){ return num.id; });
+						  	%>
+
+						<span style="" id="duration_span" is-multivalued = <%=obj['is-multivalued'] %> class="dropdown-span" metadataId = <%=obj.id %> >Select</span>
+						
+						<ul class="dropdown">
+							<% _(obj.options).each( function(opt) { %>
+							<li>
+								<a href="#" ><%= opt %></a>
+							</li>
+							 <% }) } }) %>
+						</ul>
+					</div>
+				</div>
+		    </div> -->
+
+		    <div class="row-fluid">
+		        <div class="span12" style="margin-left: 0px;min-height: 10px !important;margin-bottom: 7px;">
+		        	<label style="line-height: 10px !important;font-size:13px !important">What Students Do</label>
+		        </div>							    	
+		    	<div class="span12" style="margin-left: 0px;margin-bottom: 18px;">
+		    	<% _(model.contentTypeMetaData).each(function(obj) {
+					if(obj.name ===constants.whatStudentsDo){ %>
+		    	<textarea class="span12" id="txt_WatShdDo" name="Count_text1" onKeyDown="CountLeft(txt_WatShdDo, Count_left1,150);" onKeyUp="CountLeft(txt_WatShdDo,Count_left1,150);" type="text" maxlength="150" metadataId = <%=obj.id %> ></textarea>
+		    		<% }})  %>
+		    		<span id="left3" class="pull-right">
+		    			<input class="remove" readonly="readonly" disabled="disabled" type="text" id="Count_left1" size="3" value="150" >
+		    		</span>
+		    	</div>
+		       	<div class="span12" style="margin-left: 0px;min-height: 10px !important;margin-bottom: 7px;">
+		       		<label style="line-height: 10px !important;font-size:13px !important">Teacher Notes</label>
+		       	</div>
+		       
+			<div class="span12 text1" id="div_watStdLearn" style="margin-left: 0px;" >
+			<% _(model.contentTypeMetaData).each(function(obj) {
+			if(obj.name ===constants.whatStudentsLearn){ 	%>
+		    	<div class="div_inside" id="div_studentLearn"  metadataId = <%=obj.id %> >
+		    	</div>
+		    <% }})  %>
+		    	</div>
+		    	
+		       	<div class="span12" style="margin-left: 0px;">
+		       		<textarea class="span12" id="txt_addBulletTxt" style="background-color:white;" name="Count_text2" onKeyDown="CountLeft(txt_addBulletTxt, Count_left2,70);" onKeyUp="CountLeft(txt_addBulletTxt,Count_left2,70);" type="text" maxlength="70"></textarea>
+		    		<span id="left4" class="pull-right">
+		    			<input  class="remove" readonly="readonly" disabled="disabled" type="text" id="Count_left2" size="3" value="70" >
+		    		</span>
+		    	</div>
+		    </div>
+
+		    <button class="btnAddBullet pull-right" id="btn_addBullet" style="margin-top: 13px;" type="button" >
+		    </button>
+	       

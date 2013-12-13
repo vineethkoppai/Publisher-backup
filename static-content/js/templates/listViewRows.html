@@ -1,0 +1,55 @@
+<!-- <td  style="display:none;"></td> -->
+<td width="5px" id="idd">
+	<img id="hidden" style="display:none;margin-top:-11px;" src="imgs/icon_close.png"/>
+	<!-- <input type="checkbox" name="Tchbx" class="childCheck" id="childCheckbox" style="display:inline-block;"/> -->
+	<input type="checkbox" name="Tchbx" id="childCheckbox<%=model.id%>" class="childCheck regular-checkbox1" />
+	<label for="childCheckbox<%=model.id%>"></label>
+</td>
+<td>
+	<center>
+		<%if(model.bookmarked===true){%>
+		<img class="goldStar" id="bookMark<%=model.id%>" 
+		src="imgs/stargold.png"/>
+		<%}else{%>
+		<img class="goldStar" id="bookMark<%=model.id%>"
+		src="imgs/star_black.png"/>
+		<%}%>
+	</center>
+</td>
+<td><center>
+	<%if(model.stage==constants.error){%>
+	<img class="error_icon" src="imgs/alert.png" title=""></center></td> 
+	<%}%>
+	     
+<td class="fntsz" id="title" title="Click to Edit"><%= model.title %></td>
+<td class="fntsz" id="author<%=model.id%>" ><%= model.author.username %></td>
+<td class="fntsz createdDate"><%= model["created-date"] %></td>                
+<td class="fntsz stat" id="status<%=model.id%>" >
+	<%  if(model.stage==constants.readyToReview){%>
+			<span style="display:inline-block;" class="ready2preview_color" >Ready&nbsp;&nbsp;for&nbsp;&nbsp;Review
+			</span>		
+	<%}else if(model.stage==constants.readyToPublish){%>
+			<span style="display:inline-block;" class="ready2publish_color">Ready&nbsp;&nbsp;to&nbsp;&nbsp;Publish
+			</span> 
+	<%}else if(model.stage==constants.draft){%>
+			<span style="display:inline-block;" class="draft_color">Draft
+			</span>
+	<%}else if(model.stage==constants.publish){%>
+			<span style="display:inline-block;" class="published_color" >Published
+			</span>  	 
+	<%}else if(model.stage==constants.error){%>
+			<span style="display:inline-block;" class="error_color">Error
+			</span> 	 
+	
+	<%}else if(model.stage==constants.unpublishedDisqualified){%>
+			<span style="display:inline-block;" class="unPublished-Disqualified">Unpublished / Disqualified
+			</span> 	 
+	<%}%>
+	<span style="display:inline-block;">
+		<img id="editStatus" style="display:none;height:20px;" src="imgs/Buttons/editbtn.png"/>
+	</span>
+</td>
+<td class="fntsz"><%= model.grade %></td>
+<td class="fntsz"><%= model.subject %></td>
+<td class="fntsz"><%= model.subtopic %></td>
+<td class="fntsz">DLA</td>

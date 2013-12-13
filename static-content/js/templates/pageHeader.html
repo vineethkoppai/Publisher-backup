@@ -1,0 +1,49 @@
+<div class="navbar-inner row-fluid pageheaderSubdiv">
+    <div id="pageHeader_container" style="">
+        <!-- Logo -->
+        <a class="brand logo" id ="logo" href="#/grid/home" >
+            <img src="imgs/logo_cfy.png">
+                    <!-- Dropdown Settings -->
+       <div class ="userNameDiv">
+            <div id="moveUserRole">
+                <a href="#" id="user-disp"><%= username %></a> 
+            </div>
+            <div style="display:inline-block;">
+                    <ul class="unstyled">
+                        <li class="dropdown pull-right"  id="headerNavBar">
+                            <div id="dropSettings"><i class="icon-cog icon"></i></div>
+                            <div class="dropdown-menu pull-right dropBg" id="settings_menu" >
+                                <div class="dropSet-list" id="div_logout">
+                <a id="logout" onclick="javascript:logout();">Log Out as 
+                                        <span id="role">
+                                            <span style="display:block;"><%= username %></span>
+                                            <span style="display:block;font-size:8px;text-align:right;">YOUR ROLE:</span>
+                                            <span style="display:block;text-align:right;"><%= role %></span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div id="divDefineUsers" class="dropSet-list" >
+                                        <a rel="facebox" id="addUsers" >Define Users & Roles</a> 
+                                </div>
+                                <div id="masterReportDiv" class="dropSet-list" >
+                                        <a id="masterReportId" >Create DLA report</a> 
+                                </div>
+                            </div>
+                        </li>
+                    </ul> 
+            </div>
+                
+        </div>
+    </div>
+</div>
+        <!-- DropDown Settings Ends -->
+<div id="downloadDiv" class="downloadContainer" >
+    <div class="downloadContent">
+        <div>
+        <img class="pull-right closeDownload" src="imgs/pl_close_button.png"/>
+        Your downloading will start in some time.. Please wait..
+        </div>
+    </div>
+
+</div>
+<!-- <iframe id="hiddenIframe" style="display:none;"></iframe> -->

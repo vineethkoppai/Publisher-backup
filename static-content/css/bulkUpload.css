@@ -1,0 +1,65 @@
+.bulkUploadBtn{
+	font-size:14px;
+	background-color: #9DA17B;
+	border-radius: 20px;
+	-moz-border-radius: 20px ;
+	-webkit-border-radius:20px ;
+    font-size: 12px;
+    height: 6px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.bulkUploadBtn:hover{
+	background-color: #CCCCCC !important;
+}
+.bulkUploadBtn span{
+	color: #F8F8F8;
+	position: relative;
+    top: -7px;
+}
+.bulkUploadClose{
+	float: right;
+    height: 27px;
+    margin-right: -30px;
+    margin-top: -22px;
+    width: 27px;
+}
+.bulkupload-spinner {
+    display: none;
+}
+.bulkupload-spinner img{
+    margin-left: 37% !important;
+	position: absolute;
+	margin-right: 49% !important;
+	margin-top: 12% !important;
+}
+.bulkupload-div{
+    width:100%; 
+	padding-left:135px;
+	padding-top:30px;
+}
+.bulkupload-div input{
+	display:block;
+}
+.bulkupload-errormsg {
+	color: red;
+	display: block;
+	margin-top: 7%;
+}
+.bulkupload-successmsg{
+	color: green;
+	display: block;
+	margin-top: 10%;
+}
+.bulkupload{
+	display: none;
+	border: 2px solid black;
+}
+#facebox .loadingImg-bulkupload{
+	width: 100;
+	margin-left: 38%;
+	margin-right: auto !important;
+	position: relative;
+	margin-top: 10%;
+	display: none;
+}

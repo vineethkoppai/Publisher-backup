@@ -1,0 +1,236 @@
+{
+    "operation-status": 1,
+    "content-type": {
+        "id": "20",
+        "name": "DLA",
+        "meta-attribute-description-list": [
+            {
+                "id": 60,
+                "name": "source-id",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 52,
+                "name": "min grade",
+                "is-multivalued": "no",
+                "is-restricted": "no"
+            },
+            {
+                "id": 44,
+                "name": "language",
+                "is-multivalued": "yes",
+                "is-restricted": "no",
+                "options": [
+                    "Spanish",
+                    "Other",
+                    "English"
+                ]
+            },
+            {
+                "id": 48,
+                "name": "acct required",
+                "is-multivalued": "no",
+                "is-restricted": "no"
+            },
+            {
+                "id": 43,
+                "name": "Blooms",
+                "is-multivalued": "yes",
+                "is-restricted": "no",
+                "options": [
+                    "Evaluating",
+                    "Analysing",
+                    "Analysing",
+                    "Analysing",
+                    "Analysing",
+                    "Analysing"
+                ]
+            },
+            {
+                "id": 42,
+                "name": "difficulty",
+                "is-multivalued": "yes",
+                "is-restricted": "no",
+                "options": [
+                    "No Levels",
+                    "Can Choose a Level",
+                    "Automatically Progresses"
+                ]
+            },
+            {
+                "id": 45,
+                "name": "restrictions",
+                "is-multivalued": "yes",
+                "is-restricted": "no",
+                "options": [
+                    "Download Required",
+                    "None"
+                ]
+            },
+            {
+                "id": 54,
+                "name": "what students learn",
+                "is-multivalued": "no",
+                "is-restricted": "no"
+            },
+            {
+                "id": 51,
+                "name": "thumbnailURL",
+                "is-multivalued": "no",
+                "is-restricted": "no"
+            },
+            {
+                "id": 50,
+                "name": "teaches content",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 46,
+                "name": "plugin",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": [
+                    "Other",
+                    "None",
+                    "flash"
+                ]
+            },
+            {
+                "id": 57,
+                "name": "subject",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 53,
+                "name": "max grade",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 59,
+                "name": "source-type",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 41,
+                "name": "activity",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": [
+                    "Explore",
+                    "Practice",
+                    "Play",
+                    "Create",
+                    "Watch"
+                ]
+            },
+            {
+                "id": 61,
+                "name": "source-site",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 56,
+                "name": "what students do",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 55,
+                "name": "comments",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 47,
+                "name": "audio support",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 58,
+                "name": "subtopic",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            },
+            {
+                "id": 49,
+                "name": "multi player",
+                "is-multivalued": "no",
+                "is-restricted": "no",
+                "options": []
+            }
+        ],
+        "subject-list": [
+            {
+                "id": 1,
+                "name": "Math",
+                "taxonomyId": 4,
+                "subtopics": null
+            },
+            {
+                "id": 2,
+                "name": "Language Arts",
+                "taxonomyId": 3,
+                "subtopics": null
+            },
+            {
+                "id": 3,
+                "name": "Science",
+                "taxonomyId": 0,
+                "subtopics": null
+            },
+            {
+                "id": 4,
+                "name": "Social Studies",
+                "taxonomyId": 0,
+                "subtopics": null
+            },
+            {
+                "id": 5,
+                "name": "Art",
+                "taxonomyId": 0,
+                "subtopics": null
+            },
+            {
+                "id": 6,
+                "name": "Technology",
+                "taxonomyId": 0,
+                "subtopics": null
+            },
+            {
+                "id": 7,
+                "name": "World Languages",
+                "taxonomyId": 0,
+                "subtopics": null
+            },
+            {
+                "id": 8,
+                "name": "Brain Games",
+                "taxonomyId": 0,
+                "subtopics": null
+            },
+            {
+                "id": 9,
+                "name": "Your Life",
+                "taxonomyId": 0,
+                "subtopics": null
+            }
+        ]
+    }
+}

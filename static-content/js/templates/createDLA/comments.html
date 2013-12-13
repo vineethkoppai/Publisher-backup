@@ -1,0 +1,13 @@
+ <div class="row-fluid">
+							    <% _(model.contentTypeMetaData).each(function(obj) {
+										if(obj.name ===constants.comments){ %>
+								    <div class="span12 text1" id="text5"  >
+								    	<div  id="addComments" class="div_inside" metadataId = <%=obj.id %> ></div>
+									</div>
+									<% }})  %>
+								    <textarea id="txtComment" style="background-color:#ffffff;" class="span12 texta" name="Count_text4" onKeyDown="CountLeft(txtComment, Count_left4,200);" onKeyUp="CountLeft(txtComment,Count_left4,200);" maxlength="200"></textarea>
+								    <span id="left6" class="pull-right">
+								    	<input class="remove" disabled="disabled" type="text" id="Count_left4" size="3" value="200" readonly/>
+								    </span>
+									<button class="pull-right btn btns " style="margin-top:13px;" id="btn_addComment" type="button">Add Comments</button>
+	</div>

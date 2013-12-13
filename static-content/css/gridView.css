@@ -1,0 +1,217 @@
+
+/*Responsive styles*/
+
+
+/*End of responsive*/
+/* CHAT WINDOW STYLES*/
+// .chat-window{
+//     border: 1px solid;
+//     width: 300px;
+//     position: fixed;
+//     bottom: 0;
+//     left: 4%;
+//     // min-height: 225px;
+//     background-color: white;
+//     z-index: 1;
+// }
+// .minimize-chat{
+//     display: none;
+// }
+// .chat-msgs{
+//     height: 132px;
+//     overflow-y: auto;
+//     overflow-x: hidden;
+//     word-break: break-word;
+//     padding: 5px 15px;
+//     font-weight: normal;
+//     font-size: 14px;
+// }
+// .current-msg span{
+//     font-weight: bold;
+// }
+// .current-msg{
+//     margin: 5px 0px;
+// }
+// .chat-h-table{
+//     width: 100%;
+//     border-bottom: 1px solid;
+//     background-color: black;
+//     color: white;
+//     position: absolute;
+//     right: 0;
+//     min-height: 30px;
+// }
+// .chat-h{
+//     cursor: pointer;
+//     min-height: 30px;
+// }
+// .chat-textarea{
+//     width: 100%;
+//     margin: 0;
+//     border-radius: 0px;
+//     border: 3px solid transparent;
+//     padding-bottom: 1px;
+// }
+// .chat-bottom{
+//     border-top: 1px solid;
+//     min-height: 42px;
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+// }
+// .chat-h-table tr{
+//     text-align: center;
+// }
+// .chat-minimize:hover, .chat-close:hover{
+//     background-color: #999;
+// }
+/* CHAT WINDOW STYLES END*/
+#dla_body{
+	overflow: hidden;
+	background-color: #ececec;
+}
+
+/*Grid that contains DLAs*/
+.wrapper{
+	position: fixed;
+	top: 100px;
+	margin-top: 10px !important;
+	padding-top: 35px;
+	margin-bottom: 18% !important;
+	height: 79% !important;
+	overflow: auto;
+	display: block;
+    float: none;
+    margin: auto;
+    width: 99.6%;    	
+}
+
+/*After search*/
+#noResultGrid{
+	top: inherit;
+}
+.noSearchResults{
+	color: gray;
+    font-size: larger;
+    font-weight: bold;
+    margin-left: auto;
+    position: absolute;
+    text-align: center;    
+    width: 100%;
+    z-index: 1;
+}
+
+/*Each DLA styles*/
+.dlaBg{
+	background: url('../imgs/background.png') no-repeat;
+}
+.dla{     
+	border: 0px !important;
+	width:160px !important;
+	height: 200px;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow:  none !important;
+	box-shadow: none !important;
+    z-index:1;
+    visibility:visible;
+}
+/* thumbnail*/
+.thumbnail {
+	margin: 10px 10px !important;
+	padding: 0 !important;
+}
+.bookMark{
+  	z-index: 1;
+  	position: relative;
+  	margin-right: 10px !important;
+  	margin-top: -3% !important;
+	cursor: pointer;
+}
+.editLink{
+	color:#333333;
+}
+.editLink:hover{
+	color:#333333;
+}
+.editLink:focus{
+	outline: none;
+}
+#status1{
+  	height: 0;
+  	margin-top: 10px;
+}
+#status{		/*For status info*/
+	font-size: 8px;
+    font-weight: normal;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: -3px;
+    text-transform: uppercase;
+}
+#thumb{ 	/*For title*/
+	font-size: 12px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 15px !important;
+    margin-left: 9px;
+    padding-right: 10px;
+    overflow: hidden;
+	/*text-overflow: ellipsis;*/
+	word-wrap:break-word;
+	/*word-break: break-all;*/
+}
+.status_img{
+    margin-left: 8px;
+}
+#date{					/*For date*/
+	margin-left:10px;
+	color: gray;
+	font-size: 10px;
+    margin-bottom: 12px;
+}
+.teachersPlan{
+	background: url('../imgs/bg3.png') no-repeat !important;
+}
+
+/*For playlist*/
+.Tranform_Effect{
+	background: url("../imgs/Bg2.png") no-repeat scroll 0 0 transparent;
+    border: 0 none !important;
+    display: none;
+    height: 215px;
+    margin-left: -11px;
+    margin-top: -206px;
+    width: 181px !important;
+    z-index: -1;
+}
+
+.mouse-info{
+    display: none;
+    position: fixed;
+    background-color: antiquewhite;
+    z-index: 1900;
+    padding-left: 10px;
+    background: url(//d3jgo56a5b0my0.cloudfront.net/web/assets/flyover/bg-d8d109bf4b706902ddf335fc63e51d88.png
+        );
+    border: 1px solid #323232;
+    -webkit-box-shadow: rgba(0,0,0,0.4) 2px 2px 7px;
+    -moz-box-shadow: rgba(0,0,0,0.4) 2px 2px 7px;
+    box-shadow: rgba(0,0,0,0.4) 2px 2px 7px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 425px;
+    height: 300px;
+    overflow-y:auto;
+}
+
+.mouse-info section > p, .mouse-info section > ul{
+    padding-left: 20px;
+}
+.info-pointer{
+
+}
+

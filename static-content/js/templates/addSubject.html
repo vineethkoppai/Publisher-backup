@@ -1,0 +1,45 @@
+<div class="main_addSub_Div">
+	<div class="row-fluid">
+		<div class="span4">
+			<label>Subject</label>
+		</div>
+		<div class="span8">
+			<div id="new_slct_subjects_<%= model.id %>" class="wrapper-dropdown-3 unSelect_subject subject" tabindex="1">
+				<div id="redButton" class="sub_red_icon"></div>			
+					<span style="" id="subject_span<%= model.id %>" 
+						class="dropdown-span subjectSpan" >Select</span>					
+					<ul class="dropdown">
+						<% _(model.subjects).each(function(obj) { %>
+						<li id="<%= obj.id %>"><a href="#" class="dropdown-li"><%= obj.name %></a></li>
+						 <%  }) %>
+					</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span4">
+			<label>Sub-topic</label>
+		</div>
+		<div class="span8">
+			<div id="slct_sub_top<%= model.id %>" class="wrapper-dropdown-3 subtopic" style="display:none" tabindex="1">						
+				<span style="" id="subtopic_span<%= model.id %>" class="dropdown-span subtopicSpan"  >Select</span>		
+				<ul id="slct_sub_top_ul<%= model.id %>" class="dropdown subtopicUl">
+			   </ul>
+			</div>
+			<div id="btn-disable<%= model.id %>" class="btnDisable newBtnDisable"></div>
+		</div>
+	</div>
+	<div class="row-fluid">
+			<div class="span4">
+				
+			</div>
+
+			<div class="span8">
+				<button class="lookUpTaxonomy btnLookup btnLookupNew" id="lookUpTaxonomy<%= model.id %>" type="button" disabled="disabled" title="Select a subject first">
+				</button>
+			</div>
+	</div>
+	
+</div>
+	
+	

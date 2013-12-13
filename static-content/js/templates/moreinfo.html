@@ -1,0 +1,66 @@
+<div id="moreInfoContainer" style="">
+	<div id="moreInfoheader">
+		<p id="back" class="more_info"><< BACK TO FORM</p>
+	</div>
+	<div>
+		<div id="DLA_name">
+			<%= model.dlaName %>
+		</div>
+	</div>
+	<div id="formHistory">
+		<div class="row-fluid">
+	    	<div class="span5">
+	    		<label>Author</label>
+	    	</div>
+	    	<div class="span7" >
+	    		<label id="author_name"><%=model.author%></label>
+			</div>
+	    </div> 	
+	    <div class="row-fluid">
+	    	<div class="span5">
+	    		<label>Assosiated Playlist</label>
+	    	</div>
+	    	<div class="span7" >
+	    		<label id="ass_playlist"></label>
+			</div>
+	    </div> 	
+	    <div class="row-fluid">
+	    	<div class="span5">
+	    		<label>Teachers Plan</label>
+	    	</div>
+	    	<div class="span7" >
+	    		<label id="teachers_plan"></label>
+			</div>
+	    </div> 	
+	    <div class="row-fluid">
+	    	<div class="span5">
+	    		<label>History</label>
+	    	</div>	    	
+	    </div> 	
+	<div class="row-fluid">
+	  	<div class="div_historyTable">
+	   		<table id="historytable">
+	   		  <tbody id="table_body">
+	   			<% if(model.history) _(model.history).each(function(obj){%>
+					<tr>
+					<td><%= obj.auditDate%></td>
+					<td><%= obj.user.username%></td>
+					
+					<% if(obj.summary==constants.edited) {%>
+					<td><img src="imgs/Buttons/edit.png"></td>
+					<%}else if(obj.summary==constants.Bookmarked){%>
+					<td><img src="imgs/Buttons/bookMark.png"></td>
+					<%}else{%>
+					<td class="summary">
+						<span><%= obj.summary.replace(/_/g, ' ') %></span>
+					</td>
+					<%}%>
+
+					</tr>
+						<%  }) %>
+	    			</tbody>	    			
+	    		</table>
+	    	</div>	    	
+	    </div> 	
+	</div>
+</div>

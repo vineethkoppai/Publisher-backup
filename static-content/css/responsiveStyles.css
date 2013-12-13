@@ -1,0 +1,216 @@
+@media(min-width: 1360px){
+
+	.gridViewContainer {
+	    border-top-width: 0;
+	    float: none;
+	    margin: auto;
+	    width: 1273px;
+	}
+	#pageHeader_container {
+	    float: none;
+    	margin: auto;
+    	width: 1292px;
+	}
+	#subnav_container {
+	    float: none;
+	    margin:auto;
+	    width: 1305px;
+	}
+    #sub_nav_right {   
+	    margin: auto 4.5% auto auto;
+	    padding-top: 14px;
+	    width: 228px;
+	}
+
+#listViewContainer{
+	 width: 1240px;
+}
+}
+@media (min-width: 1200px) and (max-width: 1359px){
+
+	.gridViewContainer{
+
+		/*background-color: red;	    	    */
+	    border-top-width: 0;
+	    /*height: 794px;*/
+	   	float: none;
+	   	margin: auto;
+	   	width: 1080px;
+	}
+	#subnav_container {
+
+    	/*padding-left: 5.2%;*/
+    	width: 1096px;
+    	float: none;
+    	margin: auto;
+	}
+	#pageHeader_container {
+
+	    width: 1100px;
+	    float: none;
+	    margin: auto;
+	}
+	.userRoleDiv{
+
+		float: right;
+    	margin-right: 3%;
+	}
+	.align_vertical{
+		color: red;
+	}
+}
+@media(min-width: 1110px) and (max-width: 1199px){
+
+	 .gridViewContainer{
+		border-top-width: 0;
+	    float: none;
+	   	margin: auto;
+	   	width: 1080px;
+	}
+     #pageHeader_container {
+    	float: none;
+	    margin: auto;
+	    width: 1080px;
+	}
+	.userNameDiv {
+	    float: right;
+	    margin-right: 5%;
+	}
+	#subnav_container {
+    	width: 1049px;
+	}
+	#sub_nav_right {
+		float: right;
+    	height: 30px;
+    	padding-top: 14px;
+    	margin: auto;
+	}
+}
+@media (min-width: 899px) and (max-width: 1109px){
+
+	.gridViewContainer{
+		border-top-width: 0;
+	    float: none;
+	   	margin: auto;
+	   	width: 920px;
+	}
+	#pageHeader_container {
+	    width: 896px;
+		float: none;
+		margin: auto;
+	}
+	#pageHeader_container >.logo{
+		margin-left: -3%;
+		float: left;
+	}
+	#subnav_container {
+    	width: 915px;
+		float: none;
+		margin: auto;
+	}
+	#sub_nav_right {
+		/*margin: auto;*/
+	}
+	.top-nav {
+		padding-left: 0px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 900px){
+	.gridViewContainer{
+		border-top-width: 0;
+	    float: none;
+	   	margin: auto;
+	   	width: 920px;
+	}
+	#pageHeader_container {
+	    left: 3.2%;
+		position: absolute;
+		width: 904px;
+	}
+	.userRoleDiv{
+		float: right;
+    	margin-right: 3%;
+	}
+	#subnav_container {
+		width: 915px;
+		padding-left: 0;
+	}
+}
+@media (min-width: 899px) and( max-width:767px){
+	.gridViewContainer{
+	}
+}
+
+@media (max-width: 767px){
+	.gridViewContainer{
+	    border-top-width: 0;
+	   	float: none;
+	   	margin: auto;
+	   	width: 740px;
+	}
+	#pageHeader_container {
+	   left: 4.2%;
+	   position: absolute;
+	   width: 728px;
+	}
+	.userRoleDiv{
+		float: right;
+    	margin-right: 3%;
+	}
+	#subnav_container {
+		width: 735px;
+		padding-left: 1%;
+	}
+	.pageheaderSubdiv{
+		left: 0px;
+	}
+	.top-nav {
+	    background-color: #E7EDB5 !important;
+	    height: 45px !important;
+	    left:0;
+	    margin-bottom: 100px;
+	    margin-top: 20px;
+	    position: fixed;
+	    top: 40px;
+	    width: 100%;
+	    z-index: 10;
+	}
+	#searchDLA input {
+		background: url("../imgs/search.png") no-repeat scroll -1px -2px / 128px 31px #FFFFFF;
+	}
+}
+/*RESPONSIVE DESIGN FOR BULK UPLOAD*/
+@media(max-width: 1366px){
+
+  div.content.centerFacebox {
+      margin-left: -22% !important;
+  }
+}
+
+@media (min-width: 899px) and (max-width: 1109px){    
+  div.ButtonsLookUp {
+    margin-top: 4%;
+        
+  }
+  
+  div.content.resizeLookUp{
+    height: 610px !important;
+  }
+  
+  .lookUpContainerClass{
+      
+  }
+   div.content.centerFacebox {
+      margin-left: -28% !important;
+  }
+  
+}
+@media (min-width: 320px){
+	input.txt_login{
+		width: none;
+	}
+	.loginForm{
+		width:267px;
+	}
+}

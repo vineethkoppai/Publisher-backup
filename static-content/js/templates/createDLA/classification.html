@@ -1,0 +1,73 @@
+<div class="row-fluid">
+			<div class="span4">
+				<img class="publish_Mand publishMandatory" src="imgs/Buttons/pub_required.png">
+				<label>Subject</label>
+			</div>
+			<div class="disableSub"></div>
+			<div class="span8">
+ 
+						<div id="slct_subjects" class="wrapper-dropdown-3 " tabindex="1">
+				<% _(model.contentTypeMetaData).each(function(obj) {
+							  if(obj.name ===constants.subject){ %>
+				<span style="" id="subject_span" class="dropdown-span"  metadataId = <%=obj.id %> >Select</span>
+							<% } }) %>
+							<ul class="dropdown">
+								<% _(model.subjects).each(function(obj) { %>
+								<li id="<%= obj.id %>"><a href="#" class="dropdown-li"><%= obj.name %></a></li>
+								 <%  }) %>
+							</ul>
+						</div>
+			</div>
+	</div>
+ 
+	<div class="row-fluid">
+			<div class="span4">
+				<label>Sub-topic</label>
+			</div>
+ 
+			<div class="span8">
+				
+				<div id="slct_sub_top" style="display:none;" class="wrapper-dropdown-3 " tabindex="1">
+		<% _(model.contentTypeMetaData).each(function(obj) {
+					  if(obj.name ===constants.subtopic){ %>
+		<span style="" id="subtopic_span" class="dropdown-span" metadataId = <%=obj.id %> >Select</span>	
+					<% } }) %>
+					<ul class="dropdown" id="slct_sub_top_ul">
+ 
+					</ul>
+				</div>
+				<div id="btn-disable" class="btnDisable" style=""></div>
+			</div>
+	</div>
+	<div class="row-fluid">
+			<div class="span4">
+				
+			</div>
+ 
+			<div class="span8">
+				<button class="lookUpTaxonomy btnLookup" id="lookUpTaxonomy" type="button" disabled="disabled" title="Select a subject first"></button>
+			</div>
+	</div>
+ 
+	<br/>
+	<div id="addSubjectDiv"></div>
+	<div class="row-fluid disableStandards"></div>
+	<div class="row-fluid">
+		<div class="span4">
+			<label>Standards</label>
+		</div>
+		<div class="span6 pull-right degree-of-alignment">
+			<!-- <label>
+			Degree of Alignment
+			</label> -->
+			<span>Degree of Alignment <i class="icon-question-sign"></i></span>
+		</div>
+ 
+		<div class="standards span12">
+			<div>
+			<div id="desc_classification" style="min-width:194px;"  ></div>
+			</div>
+		</div>
+	</div>
+	<button class="btnAddAnotherSub pull-right" id="btn_anotherSubject" type="button">
+	</button>
